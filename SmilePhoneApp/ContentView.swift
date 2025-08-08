@@ -263,7 +263,7 @@ struct DialerView: View {
     
     var body: some View {
         VStack(spacing: 30) {
-            Text("Hi,\nDear Janus\nWelcome Smile Home")
+            Text("Hi, Dear Janus Welcome Smile Home")
                 .font(.system(size: 16))
                 .multilineTextAlignment(.center)
                 .padding(.top, 20)
@@ -370,7 +370,7 @@ struct FavoritePageView: View {
     
     var body: some View {
         VStack {
-            Text("Hi,\nDear Janus\nWelcome Smile Home")
+            Text("Favorite Page")
                 .font(.system(size: 16))
                 .multilineTextAlignment(.center)
                 .padding(.top, 20)
@@ -388,7 +388,7 @@ struct ContactPageView: View {
     
     var body: some View {
         VStack {
-            Text("Hi,\nDear Janus\nWelcome Smile Home")
+            Text("Contact Book")
                 .font(.system(size: 16))
                 .multilineTextAlignment(.center)
                 .padding(.top, 20)
@@ -406,7 +406,7 @@ struct RecentCallsView: View {
     
     var body: some View {
         VStack {
-            Text("Hi,\nDear Janus\nWelcome Smile Home")
+            Text("Recent Calls")
                 .font(.system(size: 16))
                 .multilineTextAlignment(.center)
                 .padding(.top, 20)
@@ -432,7 +432,7 @@ struct PersonalPageView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 20) {
-                Text("Hi,\nDear Janus\nWelcome Smile Home")
+                Text("Hi, Dear Janus Welcome Smile Home")
                     .font(.system(size: 16))
                     .multilineTextAlignment(.center)
                     .padding(.top, 20)
