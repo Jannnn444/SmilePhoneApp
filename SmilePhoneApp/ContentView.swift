@@ -28,6 +28,7 @@ struct GreetingView: View {
             
             Text("Hi, Welcome Smile Phone App")
                 .font(.system(size: 18))
+                .fontWeight(.medium)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 20)
             
@@ -64,7 +65,7 @@ struct LoginView: View {
             VStack(spacing: 20) {
                 VStack(alignment: .leading, spacing: 8) {
                     Text("Account")
-                        .font(.system(size: 16, weight: .medium))
+                        .font(.system(size: 20, weight: .medium))
                     
                     TextField("Enter your account", text: $account)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -74,7 +75,7 @@ struct LoginView: View {
                 
                 VStack(alignment: .leading, spacing: 8) {
                     Text("Password")
-                        .font(.system(size: 16, weight: .medium))
+                        .font(.system(size: 20, weight: .medium))
                     
                     SecureField("Enter your password", text: $password)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -173,7 +174,7 @@ struct PasswordSentView: View {
             Spacer()
             
             Text("Your password (that been sent to your email) !")
-                .font(.system(size: 16))
+                .font(.system(size: 20))
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 20)
             
@@ -214,6 +215,7 @@ struct HomeView: View {
                     Text("Dialer")
                 }
                 .tag(0)
+                
             
             FavoritePageView(contacts: sampleContacts)
                 .tabItem {
@@ -221,6 +223,7 @@ struct HomeView: View {
                     Text("Favorite")
                 }
                 .tag(1)
+               
             
             ContactPageView(contacts: sampleContacts)
                 .tabItem {
@@ -228,6 +231,7 @@ struct HomeView: View {
                     Text("Contacts")
                 }
                 .tag(2)
+               
             
             RecentCallsView(contacts: sampleContacts)
                 .tabItem {
@@ -235,6 +239,7 @@ struct HomeView: View {
                     Text("Recent")
                 }
                 .tag(3)
+               
             
             PersonalPageView()
                 .tabItem {
@@ -242,8 +247,9 @@ struct HomeView: View {
                     Text("Profile")
                 }
                 .tag(4)
+               
         }
-        .navigationTitle("Home")
+//        .navigationTitle("Home")
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(true)
     }
@@ -264,7 +270,8 @@ struct DialerView: View {
     var body: some View {
         VStack(spacing: 30) {
             Text("Hi, Dear Janus Welcome Smile Home")
-                .font(.system(size: 16))
+                .font(.system(size: 20))
+                .fontWeight(.medium)
                 .multilineTextAlignment(.center)
                 .padding(.top, 20)
             
@@ -371,7 +378,8 @@ struct FavoritePageView: View {
     var body: some View {
         VStack {
             Text("Favorite Page")
-                .font(.system(size: 16))
+                .font(.system(size: 20))
+                .fontWeight(.medium)
                 .multilineTextAlignment(.center)
                 .padding(.top, 20)
             
@@ -389,7 +397,8 @@ struct ContactPageView: View {
     var body: some View {
         VStack {
             Text("Contact Book")
-                .font(.system(size: 16))
+                .font(.system(size: 20))
+                .fontWeight(.medium)
                 .multilineTextAlignment(.center)
                 .padding(.top, 20)
             
@@ -407,7 +416,8 @@ struct RecentCallsView: View {
     var body: some View {
         VStack {
             Text("Recent Calls")
-                .font(.system(size: 16))
+                .font(.system(size: 20))
+                .fontWeight(.medium)
                 .multilineTextAlignment(.center)
                 .padding(.top, 20)
             
@@ -433,11 +443,12 @@ struct PersonalPageView: View {
         ScrollView {
             VStack(spacing: 20) {
                 Text("Personal Information")
-                    .font(.system(size: 16))
+                    .font(.system(size: 20))
+                    .fontWeight(.medium)
                     .multilineTextAlignment(.center)
                     .padding(.top, 20)
                 
-                VStack(spacing: 16) {
+                VStack(spacing: 20) {
                     ProfileInfoView(title: "Name", value: user.firstName)
                     ProfileInfoView(title: "Last Name", value: user.lastName)
                     ProfileInfoView(title: "Account", value: user.account)
@@ -475,7 +486,7 @@ struct ContactRowView: View {
             
             VStack(alignment: .leading, spacing: 2) {
                 Text(contact.name)
-                    .font(.system(size: 16, weight: .medium))
+                    .font(.system(size: 20, weight: .medium))
                 
                 Text(contact.phoneNumber)
                     .font(.system(size: 14))
@@ -500,7 +511,7 @@ struct ProfileInfoView: View {
                 .foregroundColor(.secondary)
             
             Text(value)
-                .font(.system(size: 16))
+                .font(.system(size: 20))
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(12)
