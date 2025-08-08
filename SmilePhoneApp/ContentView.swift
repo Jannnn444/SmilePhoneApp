@@ -432,7 +432,7 @@ struct PersonalPageView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 20) {
-                Text("Hi, Dear Janus Welcome Smile Home")
+                Text("Personal Information")
                     .font(.system(size: 16))
                     .multilineTextAlignment(.center)
                     .padding(.top, 20)
