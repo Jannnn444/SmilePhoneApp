@@ -215,12 +215,12 @@ struct HomeView: View {
                     Text("Dialer")
                 }
                 .tag(0)
-                
             
-            FavoritePageView(contacts: sampleContacts)
+            
+            RecentCallsView(contacts: sampleContacts)
                 .tabItem {
-                    Image(systemName: "star.fill")
-                    Text("Favorite")
+                    Image(systemName: "phone.fill")
+                    Text("Recent")
                 }
                 .tag(1)
                
@@ -233,10 +233,10 @@ struct HomeView: View {
                 .tag(2)
                
             
-            RecentCallsView(contacts: sampleContacts)
+            FavoritePageView(contacts: sampleContacts)
                 .tabItem {
-                    Image(systemName: "phone.fill")
-                    Text("Recent")
+                    Image(systemName: "star.fill")
+                    Text("Favorite")
                 }
                 .tag(3)
                
