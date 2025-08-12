@@ -20,3 +20,11 @@ struct User {
     let account: String
     let registeredDate: String
 }
+
+struct PersonalData {
+    let name: String
+    let email: String
+    let settingsPreference: String
+}
+
+
