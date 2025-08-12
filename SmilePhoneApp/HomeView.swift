@@ -28,29 +28,39 @@ struct HomeView: View {
                 }
                 .tag(0)
             
+            VideoCallView(contacts: sampleContacts)
+                .tabItem {
+                    Image(systemName: "camera.fill")
+                    Text("Video Call")
+                }
+                .tag(1)
             
             RecentCallsView(contacts: sampleContacts)
                 .tabItem {
                     Image(systemName: "phone.fill")
                     Text("Recent")
                 }
-                .tag(1)
-               
+                .tag(2)
             
             ContactPageView(contacts: sampleContacts)
                 .tabItem {
                     Image(systemName: "person.fill")
                     Text("Contacts")
                 }
-                .tag(2)
-               
+                .tag(3)
             
             FavoritePageView(contacts: sampleContacts)
                 .tabItem {
                     Image(systemName: "star.fill")
                     Text("Favorite")
                 }
-                .tag(3)
+                .tag(4)
+            
+            SettingsView()
+                .tabItem {
+                    Image(systemName: "wheel.fill")
+                    Text("Settings")
+                }
                
             
             PersonalPageView()
@@ -58,10 +68,10 @@ struct HomeView: View {
                     Image(systemName: "person.circle.fill")
                     Text("Profile")
                 }
-                .tag(4)
+                .tag(5)
                
         }
-//        .navigationTitle("Home")
+//      .navigationTitle("Home")
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(true)
     }

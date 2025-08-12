@@ -24,6 +24,8 @@
 		1EE7302A2E4B1EFC00DADB04 /* PersonalPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE730292E4B1EFC00DADB04 /* PersonalPageView.swift */; };
 		1EE7302C2E4B1F1D00DADB04 /* ContactRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7302B2E4B1F1D00DADB04 /* ContactRowView.swift */; };
 		1EE7302E2E4B1F3500DADB04 /* ProfileInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7302D2E4B1F3500DADB04 /* ProfileInfoView.swift */; };
+		1EE730302E4B283600DADB04 /* VideoCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7302F2E4B283600DADB04 /* VideoCallView.swift */; };
+		1EE730322E4B2D5100DADB04 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE730312E4B2D5100DADB04 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		1EE730292E4B1EFC00DADB04 /* PersonalPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalPageView.swift; sourceTree = "<group>"; };
 		1EE7302B2E4B1F1D00DADB04 /* ContactRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRowView.swift; sourceTree = "<group>"; };
 		1EE7302D2E4B1F3500DADB04 /* ProfileInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoView.swift; sourceTree = "<group>"; };
+		1EE7302F2E4B283600DADB04 /* VideoCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCallView.swift; sourceTree = "<group>"; };
+		1EE730312E4B2D5100DADB04 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,9 +88,9 @@
 				1EE730112E45CBCD00DADB04 /* Models.swift */,
 				1EE730172E4B1DEA00DADB04 /* GreetingView.swift */,
 				1EE730192E4B1E1F00DADB04 /* LoginView.swift */,
+				1EE7301F2E4B1E7900DADB04 /* HomeView.swift */,
 				1EE7301B2E4B1E3900DADB04 /* ForgotPasswordView.swift */,
 				1EE7301D2E4B1E6500DADB04 /* PasswordSentView.swift */,
-				1EE7301F2E4B1E7900DADB04 /* HomeView.swift */,
 				1EE730212E4B1E9400DADB04 /* DialerView.swift */,
 				1EE730232E4B1EAB00DADB04 /* FavoritePageView.swift */,
 				1EE730252E4B1EC300DADB04 /* ContactPageView.swift */,
@@ -94,6 +98,8 @@
 				1EE730292E4B1EFC00DADB04 /* PersonalPageView.swift */,
 				1EE7302B2E4B1F1D00DADB04 /* ContactRowView.swift */,
 				1EE7302D2E4B1F3500DADB04 /* ProfileInfoView.swift */,
+				1EE7302F2E4B283600DADB04 /* VideoCallView.swift */,
+				1EE730312E4B2D5100DADB04 /* SettingsView.swift */,
 			);
 			path = SmilePhoneApp;
 			sourceTree = "<group>";
@@ -181,6 +187,7 @@
 				1EE7301E2E4B1E6500DADB04 /* PasswordSentView.swift in Sources */,
 				1EE730182E4B1DEA00DADB04 /* GreetingView.swift in Sources */,
 				1EE730062E45CB9500DADB04 /* ContentView.swift in Sources */,
+				1EE730322E4B2D5100DADB04 /* SettingsView.swift in Sources */,
 				1EE730222E4B1E9400DADB04 /* DialerView.swift in Sources */,
 				1EE730202E4B1E7900DADB04 /* HomeView.swift in Sources */,
 				1EE730262E4B1EC300DADB04 /* ContactPageView.swift in Sources */,
@@ -188,6 +195,7 @@
 				1EE7302E2E4B1F3500DADB04 /* ProfileInfoView.swift in Sources */,
 				1EE7302A2E4B1EFC00DADB04 /* PersonalPageView.swift in Sources */,
 				1EE7301A2E4B1E1F00DADB04 /* LoginView.swift in Sources */,
+				1EE730302E4B283600DADB04 /* VideoCallView.swift in Sources */,
 				1EE730042E45CB9500DADB04 /* SmilePhoneAppApp.swift in Sources */,
 				1EE730242E4B1EAB00DADB04 /* FavoritePageView.swift in Sources */,
 				1EE730282E4B1EDF00DADB04 /* RecentCallsView.swift in Sources */,

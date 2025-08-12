@@ -54,7 +54,6 @@ struct LoginView: View {
             }
             .padding(.horizontal, 20)
             .disabled(account.isEmpty || password.isEmpty)
-            
             NavigationLink(destination: ForgotPasswordView()) {
                 Text("Forgot Password?")
                     .foregroundColor(.blue)
